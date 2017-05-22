@@ -12,7 +12,7 @@ class App extends React.Component {
 
         this.state = { videos: []};
 
-        YTSearch({key: API_KEY,term: 'surfboards'}, (videos) => {
+        YTSearch({key: API_KEY,term: 'cats'}, (videos) => {
             this.setState({ videos }); //equals to {videos : videos}
         });
     }
